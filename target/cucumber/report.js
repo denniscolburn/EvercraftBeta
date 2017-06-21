@@ -33,14 +33,14 @@ formatter.match({
   "location": "EvercraftSteps.i_have_a_character()"
 });
 formatter.result({
-  "duration": 106745184,
+  "duration": 112503672,
   "status": "passed"
 });
 formatter.match({
   "location": "EvercraftSteps.i_ask_him_his_name()"
 });
 formatter.result({
-  "duration": 37380,
+  "duration": 31717,
   "status": "passed"
 });
 formatter.match({
@@ -53,8 +53,63 @@ formatter.match({
   "location": "EvercraftSteps.he_replies(String)"
 });
 formatter.result({
-  "duration": 5189852,
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Bob]\u003e but was:\u003c[Jim]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat steps.EvercraftSteps.he_replies(EvercraftSteps.java:28)\r\n\tat ✽.Then he replies \"Bob\"(features/create_character.feature:6)\r\n",
-  "status": "failed"
+  "duration": 4673698,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 8,
+  "name": "I can tell him his name",
+  "description": "",
+  "id": "character;i-can-tell-him-his-name",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 9,
+  "name": "I have a character",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 10,
+  "name": "I tell him his name is \"Jim\"",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "he replies \"Jim\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "EvercraftSteps.i_have_a_character()"
+});
+formatter.result({
+  "duration": 40402,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Jim",
+      "offset": 24
+    }
+  ],
+  "location": "EvercraftSteps.i_tell_him_his_name_is(String)"
+});
+formatter.result({
+  "duration": 86088,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Jim",
+      "offset": 12
+    }
+  ],
+  "location": "EvercraftSteps.he_replies(String)"
+});
+formatter.result({
+  "duration": 186902,
+  "status": "passed"
 });
 });
