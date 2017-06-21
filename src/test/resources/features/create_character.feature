@@ -16,3 +16,9 @@ Given I have a character
 When I ask him his alignment
 Then he replies "Neutral" is his alignment
 
+Scenario: My character has a armor class
+Given I have a character
+When I ask him his armor class
+Then he replies "10" is my armor class
+
+

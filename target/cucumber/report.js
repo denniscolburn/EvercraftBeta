@@ -33,14 +33,14 @@ formatter.match({
   "location": "EvercraftSteps.i_have_a_character()"
 });
 formatter.result({
-  "duration": 103232925,
+  "duration": 108304593,
   "status": "passed"
 });
 formatter.match({
   "location": "EvercraftSteps.i_ask_him_his_name()"
 });
 formatter.result({
-  "duration": 40401,
+  "duration": 41912,
   "status": "passed"
 });
 formatter.match({
@@ -53,7 +53,7 @@ formatter.match({
   "location": "EvercraftSteps.he_replies(String)"
 });
 formatter.result({
-  "duration": 5039196,
+  "duration": 3276271,
   "status": "passed"
 });
 formatter.scenario({
@@ -83,7 +83,7 @@ formatter.match({
   "location": "EvercraftSteps.i_have_a_character()"
 });
 formatter.result({
-  "duration": 37381,
+  "duration": 40779,
   "status": "passed"
 });
 formatter.match({
@@ -96,7 +96,7 @@ formatter.match({
   "location": "EvercraftSteps.i_tell_him_his_name_is(String)"
 });
 formatter.result({
-  "duration": 88354,
+  "duration": 82313,
   "status": "passed"
 });
 formatter.match({
@@ -109,7 +109,7 @@ formatter.match({
   "location": "EvercraftSteps.he_replies(String)"
 });
 formatter.result({
-  "duration": 95151,
+  "duration": 89865,
   "status": "passed"
 });
 formatter.scenario({
@@ -139,14 +139,14 @@ formatter.match({
   "location": "EvercraftSteps.i_have_a_character()"
 });
 formatter.result({
-  "duration": 36248,
+  "duration": 39268,
   "status": "passed"
 });
 formatter.match({
   "location": "EvercraftSteps.i_ask_him_his_alignment()"
 });
 formatter.result({
-  "duration": 36625,
+  "duration": 55882,
   "status": "passed"
 });
 formatter.match({
@@ -159,7 +159,57 @@ formatter.match({
   "location": "EvercraftSteps.he_replies_is_his_alignment(String)"
 });
 formatter.result({
-  "duration": 116673,
+  "duration": 79292,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 19,
+  "name": "My character has a armor class",
+  "description": "",
+  "id": "character;my-character-has-a-armor-class",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 20,
+  "name": "I have a character",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 21,
+  "name": "I ask him his armor class",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 22,
+  "name": "he replies \"10\" is my armor class",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "EvercraftSteps.i_have_a_character()"
+});
+formatter.result({
+  "duration": 43799,
+  "status": "passed"
+});
+formatter.match({
+  "location": "EvercraftSteps.i_ask_him_his_armor_class()"
+});
+formatter.result({
+  "duration": 49085,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "10",
+      "offset": 12
+    }
+  ],
+  "location": "EvercraftSteps.he_replies_is_my_armor_class(String)"
+});
+formatter.result({
+  "duration": 90242,
   "status": "passed"
 });
 });

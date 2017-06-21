@@ -13,6 +13,7 @@ public class EvercraftSteps {
 	protected PC pc = null;
 	protected String pcName;
 	protected String pcAlign;
+	protected String pcArmor;
 	
 	@Given("^I have a character$")
 	public void i_have_a_character() throws Throwable {
@@ -43,5 +44,16 @@ public class EvercraftSteps {
 	@Then("^he replies \"([^\"]*)\" is his alignment$")
 	public void he_replies_is_his_alignment(String align) throws Throwable {
 	    assertEquals(align, pc.getAlign());
+	}
+	
+	@Then("^he replies \"([^\"]*)\" is my armor class$")
+	public void he_replies_is_my_armor_class(String armor) throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		assertEquals(armor, pc.getArmor());
+	}
+	
+	@When("^I ask him his armor class$")
+	public void i_ask_him_his_armor_class() throws Throwable {
+		pcArmor = pc.getArmor();
 	}
 }
