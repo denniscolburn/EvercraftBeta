@@ -12,6 +12,7 @@ public class EvercraftSteps {
 	
 	protected PC pc = null;
 	protected String pcName;
+	protected String pcAlign;
 	
 	@Given("^I have a character$")
 	public void i_have_a_character() throws Throwable {
@@ -30,8 +31,17 @@ public class EvercraftSteps {
 	
 	@When("^I tell him his name is \"([^\"]*)\"$")
 	public void i_tell_him_his_name_is(String name) throws Throwable {
-		pc.setName(name);
-	    
+		pc.setName(name);	    
 	}
 
+	
+	@When("^I ask him his alignment$")
+	public void i_ask_him_his_alignment() throws Throwable {
+	   pcAlign = pc.getAlign();
+	}
+	
+	@Then("^he replies \"([^\"]*)\" is his alignment$")
+	public void he_replies_is_his_alignment(String align) throws Throwable {
+	    assertEquals(align, pc.getAlign());
+	}
 }

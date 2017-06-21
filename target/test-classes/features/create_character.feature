@@ -10,3 +10,9 @@ Given I have a character
 When I tell him his name is "Jim"
 Then he replies "Jim"
 
+
+Scenario: My character has an alignment
+Given I have a character 
+When I ask him his alignment
+Then he replies "Neutral" is his alignment
+
