@@ -11,6 +11,6 @@ import org.junit.runner.RunWith;
 		features = "classpath:features/",
 		glue = "steps"		
 		)
-public class RunAllTests {
+public class RunAllTest {
 
 }

@@ -33,14 +33,14 @@ formatter.match({
   "location": "EvercraftSteps.i_have_a_character()"
 });
 formatter.result({
-  "duration": 142907254,
+  "duration": 129025863,
   "status": "passed"
 });
 formatter.match({
   "location": "EvercraftSteps.i_ask_him_his_name()"
 });
 formatter.result({
-  "duration": 32850,
+  "duration": 43044,
   "status": "passed"
 });
 formatter.match({
@@ -53,7 +53,7 @@ formatter.match({
   "location": "EvercraftSteps.he_replies(String)"
 });
 formatter.result({
-  "duration": 3687456,
+  "duration": 3035374,
   "status": "passed"
 });
 });
