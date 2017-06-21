@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 		monochrome = true,
 		plugin = { "pretty", "html:target/cucumber" },
-		features = "classpath:features/",
+		features = "classpath:features",
 		glue = "steps"		
 		)
 public class RunAllTest {

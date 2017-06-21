@@ -25,7 +25,7 @@ public class EvercraftSteps {
 
 	@Then("^he replies \"([^\"]*)\"$")
 	public void he_replies(String name) throws Throwable {
-	    assertEquals(pcName, name);
+	    assertEquals(name, pcName);
 	}	
 
 }

@@ -33,14 +33,14 @@ formatter.match({
   "location": "EvercraftSteps.i_have_a_character()"
 });
 formatter.result({
-  "duration": 129025863,
+  "duration": 106745184,
   "status": "passed"
 });
 formatter.match({
   "location": "EvercraftSteps.i_ask_him_his_name()"
 });
 formatter.result({
-  "duration": 43044,
+  "duration": 37380,
   "status": "passed"
 });
 formatter.match({
@@ -53,7 +53,8 @@ formatter.match({
   "location": "EvercraftSteps.he_replies(String)"
 });
 formatter.result({
-  "duration": 3035374,
-  "status": "passed"
+  "duration": 5189852,
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Bob]\u003e but was:\u003c[Jim]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat steps.EvercraftSteps.he_replies(EvercraftSteps.java:28)\r\n\tat ✽.Then he replies \"Bob\"(features/create_character.feature:6)\r\n",
+  "status": "failed"
 });
 });
